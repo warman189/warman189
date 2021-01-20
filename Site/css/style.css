@@ -1,0 +1,811 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(/Site/img/bg/bg.png);
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */
+.header {
+  width: 100%;
+  background-color: #ffffff;
+}
+.top-container {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+}
+/* HEAD ITEMS */
+.top_items {
+  padding-top: 35px;
+}
+.menu {
+  float: right;
+  list-style-type: none;
+}
+/* HEAD NAV */
+.menu a {
+  width: 215px;
+  height: 9px;
+  color: #191919;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.menu li {
+  display: inline;
+  margin: 0 5px;
+}
+.menu .home:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+#home_active:visited {
+  color: #10c9c3;
+}
+.menu .about:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+#abo_active:visited {
+  color: #10c9c3;
+}
+.menu .contact:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+#contact_active:visited {
+  color: #10c9c3;
+}
+.menu .Work:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+.menu .Process:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+.menu .Services:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+.menu .Testimonails:hover {
+  color: #10c9c3;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+/* HEAD LOGO */
+.top_logo_img {
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+.top_logo_img:hover {
+  opacity: 0.5;
+}
+/* BODY - CONTENT */
+.wrapper {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+/* MAIN TEXT */
+.text_header {
+  width: 100%;
+  margin-top: 100px;
+  height: auto;
+}
+.text_header h1 {
+  color: #171717;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 84px;
+  text-align: center;
+}
+.text_header p {
+  color: #787878;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+}
+.ui {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #a1eeeb, #10c9c3);
+}
+.ux {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #10c9c3, rgb(146, 233, 233));
+}
+/* Portfolio* */
+.block_menu {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #e9e9e9;
+}
+.bo_banner {
+  width: 80%;
+  height: 670px;
+  display: flex;
+}
+.bo_text {
+  width: 30%;
+  height: 142px;
+  margin-top: 150px;
+  margin-left: auto;
+}
+.bo_text h1 {
+  color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 5%;
+}
+.bo_text p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 1.1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+}
+.bo_text button {
+  width: 180px;
+  height: 54px;
+  background-color: #10c9c3;
+  border: none;
+  outline-style: none;
+  margin-top: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.bo_text a {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bo_text button:hover {
+  opacity: 0.6;
+}
+/* about us */
+.about_block {
+  width: 100%;
+}
+.about_container {
+  width: 80%;
+  height: 350px;
+  margin: auto;
+}
+.about_inner {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.about_inner h1 {
+  color: #191919;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 60px;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.about_inner p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* Skills */
+.skills_content {
+  width: 100%;
+  background-color: #f8f9f9;
+}
+.sk_container {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+}
+.sk_content {
+  width: 50%;
+  height: 600px;
+}
+.sk_content h1 {
+  color: #191919;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 60px;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  text-align: left;
+}
+.sk_content h4 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.first_li_blo {
+  margin: 3% 0;
+}
+.first_li_blo h4 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+.line_skills {
+  width: 500px;
+  height: 5px;
+  background-color: #d8d8d8;
+}
+.line_progress {
+  width: 336px;
+  height: 5px;
+  background-color: #10c9c3;
+}
+.line_progress2 {
+  width: 190px;
+  height: 5px;
+  background-color: #10c9c3;
+}
+.line_progress3 {
+  width: 280px;
+  height: 5px;
+  background-color: #10c9c3;
+}
+/* Sk_Image */
+.sk_img {
+  width: 50%;
+  height: 600px;
+  background-color: #e9e9e9;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 254px;
+  background-color: #141414;
+  flex: 0 0 auto;
+}
+/* FO-CONTENT */
+.fo-content {
+  margin: auto;
+  height: 254px;
+  width: 80%;
+}
+.fo-items {
+  width: 100%;
+  height: 84px;
+  padding-top: 84px;
+  position: relative;
+}
+/* FO-TITTLE */
+.fo-title {
+  position: absolute;
+}
+.fo-title h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 10%;
+}
+.fo-title p {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0.1%;
+}
+/* FO-CONTACTS BLOCK */
+.fo-contacts {
+  position: absolute;
+  left: 35.5555%;
+}
+.fo-contacts p {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 3.3333%;
+}
+.fo-contacts a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.fo-contacts a:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #10c9c3, rgb(0, 153, 255));
+}
+/* FO-LINKS BUTTONS */
+.fo-links {
+  position: absolute;
+  left: 62.2222%;
+}
+.fo-list {
+  list-style-type: none;
+}
+.fo-list a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+.fo-list a:hover {
+  letter-spacing: 2px;
+  color: #10c9c3;
+}
+.fo-links_second {
+  position: absolute;
+  left: 70%;
+}
+.fo-list2 {
+  list-style-type: none;
+}
+.fo-list2 a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+.fo-list2 a:hover {
+  letter-spacing: 2px;
+  color: #10c9c3;
+}
+.fo-social {
+  position: absolute;
+  left: 90%;
+}
+.fo-socio_links {
+  list-style-type: none;
+}
+.fo-socio_links a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.fo-socio_links a:hover {
+  color: #10c9c3;
+  letter-spacing: 2px;
+}
+/* END */
+/* Style for About page */
+/* Banner-top */
+.banner {
+  width: 100%;
+  background-color: #141414;
+}
+.banner_container {
+  width: 70%;
+  height: 350px;
+  margin: auto;
+}
+.banner_tittle {
+  padding-top: 112px;
+}
+.banner_tittle h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.banner_tittle p {
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-size: 1.1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+}
+/* Banner numbers */
+.banner_numbers {
+  width: 100%;
+  background-color: #10c9c3;
+}
+.ba_container {
+  width: 80%;
+  height: 240px;
+  margin: auto;
+}
+.ba_tittle {
+  padding-top: 101px;
+  display: flex;
+}
+.ba_projects {
+  width: 231px;
+  height: 38px;
+  margin: auto;
+  position: relative;
+}
+.ba_projects img {
+  float: left;
+  margin: 7px 30px 7px 0;
+}
+.ba_projects h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.ba_projects p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/* About me */
+.about_me {
+  width: 100%;
+}
+.ab_container {
+  width: 100%;
+  height: 570px;
+  display: flex;
+}
+.ab_photo {
+  width: 50%;
+  height: 570px;
+  background-color: #e1e1e1;
+}
+.ab_me {
+  width: 40%;
+  height: 570px;
+  background-color: #f5f5f5;
+  padding-left: 86px;
+  padding-top: 80px;
+}
+.ab_me h1 {
+  color: #171717;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 84px;
+  text-align: left;
+}
+.ab_me p {
+  width: 454px;
+  height: 104px;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 0.95em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+}
+/* contact with me */
+.contact_block {
+  width: 100%;
+}
+.contact_inner {
+  width: 50%;
+  height: 400px;
+  margin: auto;
+}
+.contact_container {
+  width: 537px;
+  height: 194px;
+  padding-top: 80px;
+  margin: auto;
+  text-align: center;
+}
+.contact_container h1 {
+  color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 84px;
+}
+.contact_container p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+}
+.contact_container button {
+  width: 180px;
+  height: 54px;
+  background-color: #10c9c3;
+  border: none;
+  outline-style: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.contact_container button:hover {
+  opacity: 0.6;
+}
+/* PAGE CONTACT */
+.contact_info {
+  width: 100%;
+}
+.info_inner {
+  width: 80%;
+  height: 680px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.co_info {
+  width: 24%;
+  height: 306px;
+  padding-top: 5.5555%;
+}
+.co_info h1 {
+  color: #171717;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9em;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.co_info p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.co_info h4 {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin: 10px 0 0;
+}
+.co_info span {
+  color: black;
+  font-weight: bold;
+}
+.form_inner {
+  width: 40%;
+  padding-top: 5.5555%;
+  position: relative;
+}
+.form_inner #name {
+  width: 30%;
+  height: 48px;
+  background-color: #ffffff;
+  border: none;
+  outline-style: none;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 0.99em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  padding-left: 24px;
+}
+.form_inner #mail {
+  width: 30%;
+  height: 48px;
+  background-color: #ffffff;
+  border: none;
+  outline-style: none;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 0.99em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  padding-left: 24px;
+  margin-left: 1.9%;
+}
+.form_inner #tittle {
+  width: 75%;
+  height: 48px;
+  background-color: #ffffff;
+  border: none;
+  outline-style: none;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 0.99em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  margin: 25px 0;
+  padding-left: 24px;
+}
+.form_inner #comment {
+  width: 75%;
+  height: 170px;
+  background-color: #ffffff;
+  border: none;
+  outline-style: none;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 0.99em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  padding-top: 15px;
+  padding-left: 24px;
+}
+.form_inner button {
+  width: 25%;
+  height: 54px;
+  background-color: #10c9c3;
+  border: none;
+  outline-style: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  margin-top: 25px;
+}
+.form_inner button:hover {
+  opacity: 0.6;
+}
+/* MAP */
+.geoposition {
+  width: 100%;
+}
+.geo_inner {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+}
+.geo_inner iframe {
+  width: 100%;
+  height: 600px;
+}
+
+
+/* MEDIA */
